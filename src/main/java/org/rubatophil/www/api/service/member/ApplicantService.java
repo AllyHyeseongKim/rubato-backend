@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ApplicantService {
 
-    private ApplicantRepository applicantRepository;
+    private final ApplicantRepository applicantRepository;
 
     public Applicant getApplicant(String name, String studentId) { return this.applicantRepository.findByNameAndStudentId(name, studentId); }
 }
