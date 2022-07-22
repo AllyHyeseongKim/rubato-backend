@@ -23,7 +23,6 @@ public class ApplicantExperience {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
-    @NotNull
     private Applicant applicant;
 
     @Embedded
